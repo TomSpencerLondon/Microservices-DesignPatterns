@@ -29,8 +29,7 @@ public class ShoppingController {
 	}
 
 	private String buildEmailBody(int price) {
-		return "Dear user ,\n" + "\n" + "\n" + "Your payment process for amount "+price +" has been instantiated." + "\n" + "\n"
-				+ "Thanks & Regards," + "\n" + "xyz company";
+		return java.lang.String.format("Dear user ,\n\n\nYour payment process for amount %d has been instantiated.\n\nThanks & Regards,\nxyz company", price);
 	}
 
 }
